@@ -1,0 +1,153 @@
+#blog-section {
+    container-type: inline-size;
+    container-name: blog-section;
+}
+#main-post {
+    grid-column: 3 / 5;
+    margin: 20px;
+    width: 90%;
+    margin-left: 100px;
+}
+#main-text{
+    
+    width: 70%;
+    grid-column: 5 / end;
+    margin: 2rem auto 2rem auto;
+}
+
+.blog-post {
+    box-shadow: 0 5px 10px 15px rgba(114, 117, 128, 0.1),0 15px 40px rgba(255, 255, 255, 0.774);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    background: rgb(39, 39, 39);
+    width: 80%;
+    margin: 1rem;
+    border: 7px solid rgba(245, 244, 244, 0.925);
+    -webkit-transition: border 0.3s ease-in-out;
+    -moz-transition: border 0.3s ease-in-out;
+    -o-transition: border 0.3s ease-in-out;
+    transition: border 0.3s ease-in-out;
+}
+
+.blog-post span{
+    font-weight: bold;
+    padding: 5px 0px 0px 20px;
+    font-size: 1.3rem;
+    color: #b1b1b1;
+}
+.blog-post span:last-child{
+    color: #f3f3f3;
+    font-size: 1.6em;
+}
+@media (max-width: 1500px) {
+    html {font-size: 18px}
+}
+@media (max-width: 1000px) {
+    html {font-size: 15px}
+}
+
+@container blog-section (max-width: 1460px) {
+    .grid-container {grid-template-columns: 1fr 6% [start] 17% 17% 17% 17% 17%[end] 6% 1fr;}
+}
+@container blog-section (max-width: 1000px) {
+    .grid-container {grid-template-columns: 1fr 0% [start] 20% 20% 20% 20% 20% [end] 0% 1fr;}
+}
+@container blog-section (max-width: 1130px) {
+    #main-post {
+        grid-column: start / end;
+        margin: auto;
+    }
+    #main-text {grid-column: start / end}
+    .blog-post {
+        margin: 30px 10px 20px 10px;
+    }
+}
+
+.two-rows {
+    grid-template-rows: auto auto;
+}
+
+#sub-posts {
+    width: 80%;
+    margin: auto;
+    grid-column: start / end;
+    justify-content: center;
+    container-type: inline-size;
+    container-name: sub-posts
+}
+.collapsible {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: auto;
+    overflow: hidden;
+    transition:height 0.5s ease-out;
+    width: 100%;
+
+}
+@container sub-posts (width < 1008px) {
+    .collapsible { grid-template-columns: 1fr 1fr;}
+}
+@container sub-posts (width < 600px) {
+    .collapsible { grid-template-columns: 1fr;}
+    .blog-post {width: 90%;}
+}
+#sub-posts a {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+#showMoreLess {
+    width: 100%;
+    height: auto;
+    grid-column: 4 / 7;
+    display: flex;
+
+}
+.drop-box {
+    
+    width: 0px;
+    height: auto;
+    background-color: rgb(190, 190, 190);
+    border-radius: 10px;
+    /* height: auto; */
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    overflow:hidden;
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+}
+.show-bar {
+    border: 1px solid rgb(170, 170, 170);
+    /* border-radius: 10px; */
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.drop-span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    /* width: auto; */
+    margin: auto;
+}
+.drop-icon {
+    font-size: 1.5rem;
+    font-weight: 900;
+    user-select: none;
+    overflow: hidden;
+    height: auto;
+}
+
+@container blog-section (width < 883px) {
+    #showMoreLess {
+        display: block;
+        height: 5rem;
+    }
+}
