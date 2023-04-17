@@ -8,7 +8,12 @@ body, body * {
     font-family: 'Ubuntu', sans-serif;
     
 }
-
+@media (max-width: 1500px) {
+    html {font-size: 18px}
+}
+@media (max-width: 1000px) {
+    html {font-size: 15px}
+}
 #page-header {
     container-type: inline-size;
     container-name: header
@@ -146,3 +151,4 @@ img {
 }
 #socials a:hover .linkedin { color: #0077b5; }
 #socials a:hover .github { color: #ffffff; }
+#socials a:hover .house { color: rgb(43, 192, 43); }

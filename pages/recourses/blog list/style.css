@@ -42,12 +42,7 @@
     color: #f3f3f3;
     font-size: 1.6em;
 }
-@media (max-width: 1500px) {
-    html {font-size: 18px}
-}
-@media (max-width: 1000px) {
-    html {font-size: 15px}
-}
+
 
 @container blog-section (max-width: 1460px) {
     .grid-container {grid-template-columns: 1fr 6% [start] 17% 17% 17% 17% 17%[end] 6% 1fr;}
@@ -150,4 +145,7 @@
         display: block;
         height: 5rem;
     }
+}
+a {
+    cursor: pointer;
 }
