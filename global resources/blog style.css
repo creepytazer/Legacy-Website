@@ -1,0 +1,12 @@
+#blog-container {
+    grid-column: start / end;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.blog-heading {
+    font-weight: 900;
+    font-size: 3rem;
+    margin-top: 2rem;
+}
