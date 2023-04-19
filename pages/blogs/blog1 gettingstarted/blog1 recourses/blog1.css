@@ -14,6 +14,10 @@
     display: block;
     margin: 1rem 1rem;
 }
+.space-all-around2 {
+    display: block;
+    margin: 2rem 2rem;
+}
 .space-top-bottom {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -30,7 +34,7 @@
 }
 .float-right {
     width: 65%;
-    margin-left: 1rem;
+    margin-left: 3rem;
 }
 .float-left {
     margin-left: auto; 
@@ -50,5 +54,6 @@
     }
     .float-right {
         width: 100%;
+        margin-left: 0;
     }
 }
