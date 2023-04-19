@@ -43,13 +43,6 @@
     font-size: 1.6em;
 }
 
-
-@container blog-section (max-width: 1460px) {
-    .grid-container {grid-template-columns: 1fr 6% [start] 17% 17% 17% 17% 17%[end] 6% 1fr;}
-}
-@container blog-section (max-width: 1000px) {
-    .grid-container {grid-template-columns: 1fr 0% [start] 20% 20% 20% 20% 20% [end] 0% 1fr;}
-}
 @container blog-section (max-width: 1130px) {
     #main-post {
         grid-column: start / end;

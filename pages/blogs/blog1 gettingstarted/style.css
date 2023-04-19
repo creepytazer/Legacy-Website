@@ -24,10 +24,7 @@ body * {
   container-type: inline-size;
   container-name: header;
 }
-body{
-  container-type: inline-size;
-  container-name: body;
-}
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 100px [start] 252px 252px 252px 252px 252px [end] 100px 1fr;
@@ -53,16 +50,7 @@ body{
     font-size: 0.5em;
   }
 }
-@container body (max-width: 1460px) {
-  .grid-container {
-    grid-template-columns: 1fr 6% [start] 17% 17% 17% 17% 17%[end] 6% 1fr;
-  }
-}
-@container body (max-width: 1000px) {
-  .grid-container {
-    grid-template-columns: 1fr 0% [start] 20% 20% 20% 20% 20% [end] 0% 1fr;
-  }
-}
+
 #header-top {
   grid-column: start/end;
   background-color: rgb(22, 22, 22);
