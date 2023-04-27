@@ -17,10 +17,12 @@ img {
 #blog-content {
     margin-top: 1rem;
     grid-column: start / end;
-    width: 95%;
+    width: 100%;
     margin: 0px auto;
     height: auto;
     display: block;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 .blog-title {
     font-weight: 900;
@@ -37,9 +39,6 @@ img {
 }
 .blog-text {
     font-size: 1.2rem;
-}
-.text-to-pic {
-
 }
 .text-to-pic img{
     float: right;

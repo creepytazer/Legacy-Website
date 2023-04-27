@@ -7,6 +7,7 @@
     margin: 20px;
     width: 90%;
     margin-left: 100px;
+    font-size: 1.6rem;
 }
 #main-text{
     
@@ -35,12 +36,15 @@
 .blog-post span{
     font-weight: bold;
     padding: 5px 0px 0px 20px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #b1b1b1;
 }
 .blog-post span:last-child{
     color: #f3f3f3;
-    font-size: 1.6em;
+    font-size: 1.4em;
+}
+.blog-post img {
+    aspect-ratio: 4 / 3;
 }
 
 @container blog-section (max-width: 1130px) {

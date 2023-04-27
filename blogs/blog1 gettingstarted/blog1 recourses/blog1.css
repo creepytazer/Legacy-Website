@@ -1,0 +1,59 @@
+.flex-box {
+    display: flex;
+    align-items: end;
+}
+.side-by-side-pic {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.full {
+    margin-top: 1rem;
+}
+.space-all-around {
+    display: block;
+    margin: 1rem 1rem;
+}
+.space-all-around2 {
+    display: block;
+    margin: 2rem 2rem;
+}
+.space-top-bottom {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.outline-rounded {
+    border: 2px solid black;
+    border-radius: 2rem;
+}
+.text-to-img {
+    display: flex;
+}
+.fourth-to-full {
+    width: 100%;
+}
+.float-right {
+    width: 65%;
+    margin-left: 3rem;
+}
+.float-left {
+    margin-left: auto; 
+    width: 35%;
+}
+#blog-content {
+    container-type: inline-size;
+    container-name: blog-content;
+}
+@container blog-content (width < 750px) {
+    .text-to-img {
+        display: block;
+    }
+    .float-left {
+        margin: 1rem auto;
+        width: 70%;
+    }
+    .float-right {
+        width: 100%;
+        margin-left: 0;
+    }
+}

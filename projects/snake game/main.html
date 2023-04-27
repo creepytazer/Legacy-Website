@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/global resources/style.css">
+    <link rel="stylesheet" href="-debug.css">
+    <link rel="stylesheet" href="recourses/snake.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Prompt:wght@600&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewort" content="width=device-width, initial-scale-1">
+    <script src="https://kit.fontawesome.com/58a6e34582.js" crossorigin="anonymous"></script>
+    <title>Tyler Riggs.tech</title>
+</head>
+<header>
+    <header><section id="page-header">
+        <div class="grid-container main-container">
+            <div id="header-top" class="header">
+                <span class="header">Tyler Riggs</span>
+            </div>
+            <div id="header-nav" class="header">
+                <a href="/index.html" class="nav-tab ">Home</a>
+                <a href="/pages/blog list.html" class="nav-tab">Blogs</a>
+                <a href="/index.html" class="nav-tab">Project 1</a>
+                <a href="/index.html" class="nav-tab">Project 2</a>
+                <div href="/index.html" id="show-more" class="nav-tab">More<i class="fa-solid fa-angle-down"></i> 
+                    <div id="drop-down">
+                        <a href="/pages/contact info.html">Contact Me</a>
+                        <a href="/pages/project list.html">Project List</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section></header>
+</header>
+<body>
+<div class="grid-container">
+<div class="content">
+    <h1 id="game-title">Snake</h1>
+    <div id="game"tabindex="-1" >
+        
+        <div id="game-board" >
+            <span id="point-tracker">d</span>
+        </div>
+        <div id="game-start">
+            <div class="center">
+            <div id="game-options">
+                <div class="settings"><span class="settings-text">Grid Size :</span><input id="game-size" type="number" value="20"></div>
+                <div class="settings"><span class="settings-text">Game Speed :</span><input id="game-speed" type="number" value="300"></div>
+                <div class="settings"><span class="settings-text">Start Size :</span><input id="game-snake-size" type="number" value="5"></div>
+            </div>
+            <div id="start-button">START GAME</div>
+            <div id="score-holder">
+                <div class="previous-scores"><span>Last Score : </span><span id="last-score">0</span></div>
+                <div class="previous-scores"><span>High Score : </span><span id="high-score">0</span></div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div id="after-project">
+        <div id="about-section">
+            <h2>About</h2>
+            <p>A simple snake game, control the snake using WASD or the arrow keys. For optimization reasons, the snake
+                is made of a linked list. I made this game to figure out a layout for project pages,
+                but I now realize that the page might change a bit more than i thought depending on the project.
+            </p>
+        </div>
+        <div id="relevant-blogs">
+            <span>Relevant Blogs</span>
+            <div id="project-blogs">
+            </div>
+        </div>
+        
+    </div>
+</div>
+</div>
+</body>
+<footer id="page-footer">
+    <div>
+        
+    </div>
+    <div id="socials">
+        <a href="/index.html" class="social-clickable"><i class="icon house fa-solid fa-house"></i></a>
+        <a href="https://www.linkedin.com/in/tyler-riggs-20bab926b/" target="_blank" class="social-clickable"><i class="icon linkedin fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/creepytazer" target="_blank" class="social-clickable"><i class="icon github fa-brands fa-github"></i></a>
+    </div>
+    <div>
+
+    </div>
+</footer>
+<script src="recourses/snake.js"></script>
+</html>
